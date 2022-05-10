@@ -1,13 +1,17 @@
-import React from 'react';
 
 import './App.css';
+import CampsitesList from './features/counter/CampsitesList.js';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      Hello nucamp!
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Header/>
+            <CampsitesList campsite={CampsitesList[0]} />
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
